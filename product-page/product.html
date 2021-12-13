@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <script src="https://kit.fontawesome.com/66b6e9a0cd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <title>Fitbit Versa 2.0 - 2020</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="FITBIT-LOGO.svg" alt="Fitbit Versa 2 Logo">
+        </div>
+        <h1 class="title">Fitbit Versa 2<span style="color: rgb(0, 255, 213);">.</span>0</h1>
+        <p class="subtitle">Elevate your day with the Fitbit Versa 2™ premium health & fitness smartwatch—includes
+            Amazon Alexa Built-in, new sleep tools, fitness features, apps and more.</p>
+        <div class="product">
+            <img class="lax" data-lax-translate-y="0 0, 400 -300" src="product.png" alt="FitBit2020">
+        </div>
+        <div class="backdrop"></div>
+
+        <a class="cta_shop" href="#">Shop Now</a>
+
+    </div>
+    <section class="features">
+        <div class="box">
+            <i class="fas fa-heartbeat"></i>
+            <div class="box-header">
+                <h3>Heart Monitor</h3>
+            </div>
+            <h5>Reveal more about your health and heart.</h5>
+            <p>Using our most advanced heart rate sensors, Versa 2 tracks all-day calorie burn to give you meaningful
+                insights on your body.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-moon"></i>
+            <div class="box-header">
+                <h3>Sleep Tracking</h3>
+            </div>
+            <h5>Sleep Better, Live Better</h5>
+            <p>Sleep better and wake up feeling more refreshed when you use <strong>Sleep Score</strong> and more new
+                features features.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-music"></i>
+            <div class="box-header">
+                <h3>Your Rythm</h3>
+            </div>
+            <h5>Move to the Music</h5>
+            <p>Play <strong>Spotify</strong>, download <strong>Pandora</strong> stations and add <strong>Deezer</strong>
+                playlist - plus store and play + 300 <strong>songs</strong>.</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
+</body>
+
+</html>
